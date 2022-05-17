@@ -60,3 +60,43 @@
 // QUESTION 9
 // var pattern = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
 // alert(pattern);
+
+/**
+ * CHAPTER 3
+ */
+
+// QUESTION 1
+// var age;
+// age = 22;
+// alert("I am " + age + " years old");
+
+// QUESTION 2
+// var visitedCount = +localStorage.getItem("visited") || 0;
+// localStorage.setItem("visited", ++visitedCount);
+// alert("You have visited this site " + visitedCount + " times");
+
+// QUESTION 3
+// var birthYear;
+// birthYear = 1999;
+// document.write(
+//   "My birth year is " +
+//     birthYear +
+//     "<br /> Data type of my declared variable is " +
+//     typeof birthYear
+// );
+
+// QUESTION 4
+// var visitorName = "John Doe";
+// var productTitle = "T-shirt";
+// var quantity = 5;
+
+// document.write(
+//   "<b>" +
+//     visitorName +
+//     "</b> ordered <b>" +
+//     quantity +
+//     " " +
+//     productTitle +
+//     "</b>(s) " +
+//     "on XYZ Clothing store"
+// );
