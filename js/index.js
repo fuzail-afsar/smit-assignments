@@ -457,3 +457,128 @@
 // output += "</table>";
 
 // document.write(output);
+
+/**
+ * CHAPTERS 9-11
+ */
+
+// QUESTION 1
+// var city = prompt("Enter city name");
+// if (city === "Karachi" || city === "karachi") {
+//   alert("Welcome to city of lights");
+// }
+
+// QUESTION 2
+// var gender = prompt("Enter your gender");
+// if (gender === "male") {
+//   alert("Good Morning Sir");
+// } else if (gender === "female") {
+//   alert("Good Morning Ma’am");
+// }
+
+// QUESTION 3
+// var color = prompt("Enter trffic signal color");
+// if (color === "Red" || color === "red") {
+//   alert("Must stop");
+// } else if (color === "Yellow" || color === "yellow") {
+//   alert("Ready to move");
+// } else if (color === "Green" || color === "green") {
+//   alert("Move now");
+// } else {
+//   alert("Must stop");
+// }
+
+// QUESTION 4
+// var fuel = +prompt("Enter your car fuel in litres");
+// if (fuel < 0.25) {
+//   alert("Please refill the fuel in your car");
+// }
+
+// QUESTION 6
+// var obtainedMarks = +prompt("Enter marks obtained in three subjects");
+// var totalMarks = +prompt("Totals marks of three subjects");
+// var percentage = (obtainedMarks / totalMarks) * 100;
+// var grade = "";
+// var remarks = "";
+// var output = "";
+
+// if (percentage >= 80) {
+//   grade = "A-one";
+//   remarks = "Excellant";
+// } else if (percentage >= 70) {
+//   grade = "A";
+//   remarks = "Good";
+// } else if (percentage >= 60) {
+//   grade = "B";
+//   remarks = "You need to improve";
+// } else if (percentage < 60) {
+//   grade = "Fail";
+//   remarks = "Sorry";
+// }
+
+// output += "<h1>Marks Sheet</h1>";
+// output += "Totals marks: " + totalMarks + "<br />";
+// output += "Marks obtained: " + obtainedMarks + "<br />";
+// output += "Percentage: " + percentage + "%<br />";
+// output += "Grade: " + grade + "<br />";
+// output += "Remarks: " + remarks;
+
+// document.write(output);
+
+// QUESTION 7
+// var secretNumber = Math.ceil(Math.random() * 10);
+// var guessNumber = +prompt("Enter guessed secret number from (1-10)");
+// if (secretNumber === guessNumber) {
+//   alert("Bingo! Correct answer");
+// } else if (secretNumber === ++guessNumber) {
+//   alert("Close enough to the correct answer");
+// }
+
+// QUESTION 8
+// var num10 = +prompt("Enter a number");
+// var divisibleNumber = 3;
+// if (num10 % divisibleNumber === 0) {
+//   alert(num10 + " is divisible by " + divisibleNumber);
+// } else {
+//   alert(num10 + " is not divisible by " + divisibleNumber);
+// }
+
+// QUESTION 9
+// var num11 = +prompt("Enter a number");
+// var divisibleNumber = 2;
+// if (num11 % divisibleNumber === 0) {
+//   alert(num11 + " is an even number");
+// } else {
+//   alert(num11 + " is an odd number");
+// }
+
+// QUESTION 10
+// var temperature = +prompt("Enter temperature");
+// if (temperature > 40) {
+//   alert("It is too hot outside.");
+// } else if (temperature > 30) {
+//   alert("The Weather today is Normal.");
+// } else if (temperature > 20) {
+//   alert("Today’s Weather is cool.");
+// } else if (temperature > 10) {
+//   alert("OMG! Today’s weather is so Cool.");
+// }
+
+// QUESTION 11
+// var firstNumber = +prompt("Enter first number");
+// var secondNumber = +prompt("Enter second number");
+// var operator = prompt("Enter operator (+, -, *, /, %)");
+// var result;
+
+// if (operator === "+") {
+//   result = firstNumber + secondNumber;
+// } else if (operator === "-") {
+//   result = firstNumber - secondNumber;
+// } else if (operator === "*") {
+//   result = firstNumber * secondNumber;
+// } else if (operator === "/") {
+//   result = firstNumber / secondNumber;
+// } else if (operator === "%") {
+//   result = (firstNumber / secondNumber) * 100;
+// }
+// alert(firstNumber + " " + operator + " " + secondNumber + " = " + result);
