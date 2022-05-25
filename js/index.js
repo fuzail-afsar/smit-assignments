@@ -582,3 +582,99 @@
 //   result = (firstNumber / secondNumber) * 100;
 // }
 // alert(firstNumber + " " + operator + " " + secondNumber + " = " + result);
+
+/**
+ * CHAPTERS 12-13
+ */
+
+// QUESTION 1
+// var input = prompt("Enter any character");
+// var asciiCode = input.charCodeAt();
+// var output = "";
+// if (asciiCode <= 57 && asciiCode >= 48) {
+//   output = input + " is a number";
+// } else if (asciiCode <= 90 && asciiCode >= 65) {
+//   output = input + " is an uppercase letter";
+// } else if (asciiCode <= 122 && asciiCode >= 97) {
+//   output = input + " is a lowercase letter";
+// } else {
+//   output = input + " is a other character";
+// }
+// alert(output);
+
+// QUESTION 2
+// var integer1 = +prompt("Enter first integer number");
+// var integer2 = +prompt("Enter second integer number");
+// var output = "";
+// if (!integer1 || !integer2) {
+//   output = "Enter integers only";
+// } else if (integer1 > integer2) {
+//   output = integer1 + " is greater.";
+// } else if (integer1 < integer2) {
+//   output = integer2 + " is greater.";
+// } else if (integer1 === integer2) {
+//   output = "Both integers are equal.";
+// } else {
+//   output = "Wrong input.";
+// }
+// alert(output);
+
+// QUESTION 3
+// var num12 = +prompt("Enter +ve, -ve or zero number");
+// if (num12 > 0) {
+//   alert(num12 + " is a positive number");
+// } else if (num12 < 0) {
+//   alert(num12 + " is a negative number");
+// } else if (num12 === 0) {
+//   alert(num12 + " is a zero");
+// } else {
+//   alert("Only +ve, -ve or zero numbers are allowed");
+// }
+
+// QUESTION 4
+// var character = prompt("Enter a character");
+
+// if (
+//   character === "a" ||
+//   character === "e" ||
+//   character === "i" ||
+//   character === "o" ||
+//   character === "u"
+// ) {
+//   alert(true);
+// } else {
+//   alert(false);
+// }
+
+// QUESTION 5
+// var password = "abc123";
+// var userPassword = prompt("Enter your password");
+
+// if (!userPassword) {
+//   alert("Please enter your password");
+// } else if (password === userPassword) {
+//   alert("Correct! The password you entered matches the original password");
+// } else {
+//   alert("Incorrect password");
+// }
+
+// QUESTION 6
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+//   greeting = "Good day";
+// } else {
+//   greeting = "Good evening";
+// }
+
+// QUESTION 7
+// var time = +prompt("Enter time in 24 hours clock format (like: 1900 = 7pm)");
+// if (time >= 0 && time < 1200) {
+//   alert("Good Morning!");
+// } else if (time >= 1200 && time < 1700) {
+//   alert("Good Afternoon!");
+// } else if (time >= 1700 && time < 2100) {
+//   alert("Good Evening!");
+// } else if (time >= 2100 && time <= 2359) {
+//   alert("Good Night!");
+// }
