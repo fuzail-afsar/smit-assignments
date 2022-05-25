@@ -678,3 +678,201 @@
 // } else if (time >= 2100 && time <= 2359) {
 //   alert("Good Night!");
 // }
+
+/**
+ * CHAPTERS 14-16
+ */
+
+// QUESTION 1
+// var students = [];
+
+// QUESTION 2
+// var students2 = new Array();
+
+// QUESTION 3
+// var sringsArray = ["abc", "def", "ghi"];
+
+// QUESTION 4
+// var numbersArray = [1, 2, 3, 5];
+
+// QUESTION 5
+// var booleanArray = [true, false];
+
+// QUESTION 6
+// var mixedArray = ["abc", 123, true];
+
+// QUESTION 7
+// var qualifications = [
+//   "SSC",
+//   "HSC",
+//   "BCS",
+//   "BS",
+//   "BCOM",
+//   "MS",
+//   "M. Phil",
+//   "PhD",
+// ];
+// var count = 0;
+// var output = "<h3>Qualifications: </h3>";
+// output += "<h3>" + ++count + ") " + qualifications[0] + "</h3>";
+// output += "<h3>" + ++count + ") " + qualifications[1] + "</h3>";
+// output += "<h3>" + ++count + ") " + qualifications[2] + "</h3>";
+// output += "<h3>" + ++count + ") " + qualifications[3] + "</h3>";
+// output += "<h3>" + ++count + ") " + qualifications[4] + "</h3>";
+// output += "<h3>" + ++count + ") " + qualifications[5] + "</h3>";
+// output += "<h3>" + ++count + ") " + qualifications[6] + "</h3>";
+// output += "<h3>" + ++count + ") " + qualifications[7] + "</h3>";
+
+// document.write(output);
+
+// QUESTION 8
+// var studentNames = [
+//   prompt("Enter first student name"),
+//   prompt("Enter second student name"),
+//   prompt("Enter third student name"),
+// ];
+
+// var studentScores = [
+//   +prompt("Enter first student score"),
+//   +prompt("Enter second student score"),
+//   +prompt("Enter third student score"),
+// ];
+
+// var totalMarks = 500;
+// var output =
+//   "Score of " +
+//   studentNames[0] +
+//   " is " +
+//   studentScores[0] +
+//   ". Percentage: " +
+//   (studentScores[0] / totalMarks) * 100 +
+//   "% \n";
+// output +=
+//   "Score of " +
+//   studentNames[1] +
+//   " is " +
+//   studentScores[1] +
+//   ". Percentage: " +
+//   (studentScores[1] / totalMarks) * 100 +
+//   "% \n";
+// output +=
+//   "Score of " +
+//   studentNames[2] +
+//   " is " +
+//   studentScores[2] +
+//   ". Percentage: " +
+//   (studentScores[2] / totalMarks) * 100 +
+//   "%";
+// alert(output);
+
+// QUESTION 9
+// var colors = ["red", "green", "blue"];
+// document.write(colors);
+
+// colors.unshift(prompt("Enter color name you wants to add to the beginning"));
+// document.write("<br />" + colors);
+
+// colors.push(prompt("Enter color name you wants to add to the end"));
+// document.write("<br />" + colors);
+
+// colors.unshift("brown", "black");
+// document.write("<br />" + colors);
+
+// colors.shift();
+// document.write("<br />" + colors);
+
+// colors.pop();
+// document.write("<br />" + colors);
+
+// colors.splice(
+//   +prompt("Enter index/position where you wants to add color"),
+//   0,
+//   prompt("Enter color name you wants to add")
+// );
+// document.write("<br />" + colors);
+
+// colors.splice(
+//   +prompt("Enter index/position at which where you wants to delete color"),
+//   +prompt("Enter length for how many colors you wants to delete")
+// );
+// document.write("<br />" + colors);
+
+// QUESTION 10
+// var studentsScore = [320, 230, 480, 120];
+// console.log(studentsScore);
+
+// studentsScore.sort();
+// console.log(studentsScore);
+
+// QUESTION 11
+// var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+// var selecteCities = cities.slice(0, 3);
+// console.log("cities", cities);
+// console.log("selecteCities", selecteCities);
+
+// QUESTION 12
+// var arr = ["This", "is", "my", "cat"];
+// console.log("array", arr);
+
+// arr = arr.join(" ");
+// console.log("string", arr);
+
+// QUESTION 13
+// var fifo = [];
+// fifo.push("fifo");
+// console.log(fifo);
+// fifo.push("-");
+// fifo.push("First");
+// fifo.push("In");
+// fifo.push("First");
+// fifo.push("Out");
+// console.log(fifo);
+
+// fifo.shift();
+// console.log(fifo);
+// fifo.shift();
+// fifo.shift();
+// fifo.shift();
+// fifo.shift();
+// fifo.shift();
+// console.log(fifo);
+
+// QUESTION 14
+// var lifo = [];
+// lifo.push("lifo");
+// console.log(lifo);
+// lifo.push("-");
+// lifo.push("Last");
+// lifo.push("In");
+// lifo.push("First");
+// lifo.push("Out");
+// console.log(lifo);
+
+// lifo.pop();
+// console.log(lifo);
+// lifo.pop();
+// lifo.pop();
+// lifo.pop();
+// lifo.pop();
+// lifo.pop();
+// console.log(lifo);
+
+// QUESTION 15
+// var phoneManufacurers = [
+//   "Apple",
+//   "Samsung",
+//   "Motorola",
+//   "Nokia",
+//   "Sony",
+//   "Haier",
+// ];
+
+// var dropdownOutput = "<select>";
+// dropdownOutput += "<option>" + phoneManufacurers[0] + "</option>";
+// dropdownOutput += "<option>" + phoneManufacurers[1] + "</option>";
+// dropdownOutput += "<option>" + phoneManufacurers[2] + "</option>";
+// dropdownOutput += "<option>" + phoneManufacurers[3] + "</option>";
+// dropdownOutput += "<option>" + phoneManufacurers[4] + "</option>";
+// dropdownOutput += "<option>" + phoneManufacurers[5] + "</option>";
+// dropdownOutput += "</select>";
+// document.write(dropdownOutput);
