@@ -876,3 +876,132 @@
 // dropdownOutput += "<option>" + phoneManufacurers[5] + "</option>";
 // dropdownOutput += "</select>";
 // document.write(dropdownOutput);
+
+/**
+ * CHAPTERS 17-20
+ */
+
+// QUESTION 1
+// var multidimensionalArray = [[]];
+
+// QUESTION 2
+// var matrix = [
+//   [0, 1, 2, 3],
+//   [1, 0, 1, 2],
+//   [2, 1, 0, 1],
+// ];
+
+// QUESTION 3
+// for (var i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// QUESTION 4
+// var tableNo = +prompt("Enter a number to show its multiplication table");
+// var tableLength = +prompt("Enter length of multiplication table");
+// var table = "Multiplication table of " + tableNo + "\n";
+// table += "Length " + tableLength + "\n";
+// for (var i = 1; i <= tableLength; i++) {
+//   table += tableNo + " x " + i + " = " + tableNo * i + "\n";
+// }
+// console.log(table);
+
+// QUESTION 5
+// var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+// for (var i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+
+// QUESTION 6
+
+// a
+// var countingHtml = "<h1>Counting:</h1>";
+// for (var i = 1, countLength = 15; i <= countLength; i++) {
+//   countingHtml += i;
+//   if (i !== countLength) countingHtml += ", ";
+// }
+// document.write(countingHtml);
+
+// b
+// var reverseCountingHtml = "<h1>Reverse Counting:</h1>";
+// for (
+//   var startIteration = 10, endIteration = 1;
+//   startIteration >= endIteration;
+//   startIteration--
+// ) {
+//   reverseCountingHtml += startIteration;
+//   if (startIteration !== endIteration) reverseCountingHtml += ", ";
+// }
+// document.write(reverseCountingHtml);
+
+// c
+// var even = "<h1>Even:</h1>";
+// for (var i = 0, length = 20; i <= length; i++) {
+//   if (i % 2 !== 0) continue;
+//   even += i;
+//   if (i !== length) even += ", ";
+// }
+// document.write(even);
+
+// d
+// var odd = "<h1>Odd:</h1>";
+// for (var i = 0, length = 20; i <= length; i++) {
+//   if (i % 2 === 0) continue;
+//   odd += i + ", ";
+// }
+// document.write(odd);
+
+// e
+// var series = "<h1>Series:</h1>";
+// for (var i = 1, length = 20; i <= length; i++) {
+//   if (i % 2 !== 0) continue;
+//   series += i + "K, ";
+// }
+// document.write(series);
+
+// QUESTION 7
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var searchItem = prompt(
+//   "Welcome to ABC Bakery. What do you want to order sir/ma'am?"
+// );
+// var isSearched = false;
+
+// for (var i = 0; i < A.length; i++) {
+//   if (A[i] === searchItem) {
+//     isSearched = true;
+//     break;
+//   }
+// }
+// if (isSearched) {
+//   alert(searchItem + " is available at index " + i + " in our bakery");
+// } else {
+//   alert("We are sorry. " + searchItem + " is not available in our bakery");
+// }
+
+// QUESTION 8
+// var A = [24, 53, 78, 91, 12];
+// var largestNo = A[0];
+// for (var i = 0; i < A.length; i++) {
+//   if (A[i] > largestNo) largestNo = A[i];
+// }
+// console.log("Array items: " + A);
+// console.log("The Largest number is: " + largestNo);
+
+// QUESTION 9
+// var A = [24, 53, 78, 91, 12];
+// var smallestNo = A[0];
+// for (var i = 0; i < A.length; i++) {
+//   if (A[i] < smallestNo) smallestNo = A[i];
+// }
+// console.log("Array items: " + A);
+// console.log("The Smallest number is: " + smallestNo);
+
+// QUESTION 10
+// for (var i = 1; i <= 100; ) {
+//   if (i === 1) {
+//     i += 4;
+//     continue;
+//   }
+//   console.log(i);
+//   i += 5;
+// }
