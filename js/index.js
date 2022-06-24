@@ -1005,3 +1005,206 @@
 //   console.log(i);
 //   i += 5;
 // }
+
+/**
+ * CHAPTERS 21-25
+ */
+
+// QUESTION 1
+// var firstName = prompt("Enter your first name");
+// var lastName = prompt("Enter your last name");
+// var fullName = firstName + " " + lastName;
+// alert("Welcome " + fullName);
+
+// QUESTION 2
+// var favoritePhoneModel = prompt("Enter your favorite mobile phone model");
+// alert(
+//   "My favorite phone is: " +
+//     favoritePhoneModel +
+//     "\nLength of string: " +
+//     favoritePhoneModel.length
+// );
+
+// QUESTION 3
+// var word = "Pakistani";
+// document.write("string: " + word + "<br />Index of 'n': " + word.indexOf("n"));
+
+// QUESTION 4
+// var word = "Hello World";
+// document.write(
+//   "string: " + word + "<br />Index of 'l': " + word.lastIndexOf("l")
+// );
+
+// QUESTION 5
+// var word = "Pakistani";
+// document.write(
+//   "string: " + word + "<br />Character at index 3: " + word.charAt(3)
+// );
+
+// QUESTION 6
+// var firstName = prompt("Enter your first name");
+// var lastName = prompt("Enter your last name");
+// var fullName = firstName.concat(" ", lastName);
+
+// alert("Welcome ".concat(fullName));
+
+// QUESTION 7
+// var city = "Hyderabad";
+// var replaceCity = "Islam" + city.slice(5);
+
+// document.write("City: " + city + "<br/>" + "After replacement: " + replaceCity);
+
+// QUESTION 8
+// var message =
+//   "Ali and Sami are best friends. They play cricket and football together.";
+// var replacedMessage = "";
+
+// for (var i = 0; i < message.length; i++) {
+//   if (message.slice(i, i + 3) === "and") {
+//     replacedMessage += "&";
+//     i += 2;
+//   } else {
+//     replacedMessage += message[i];
+//   }
+// }
+// document.write(
+//   "Message: " + message + "<br/>" + "Replaced Message: " + replacedMessage
+// );
+
+// QUESTION 9
+// var str = "472";
+// var num = 0;
+
+// for (var i = 0; i < str.length; i++) {
+//   num = num * 10 + str[i].charCodeAt() - 48;
+// }
+// document.write(
+//   "Value: " +
+//     str +
+//     "<br/>Type: " +
+//     typeof str +
+//     "<br/>Value: " +
+//     str +
+//     "<br/>Type: " +
+//     typeof num
+// );
+
+// QUESTION 10
+// var input = prompt("Enter a sentence or word", "peanuts");
+// var output = "";
+// for (var i = 0; i < input.length; i++) {
+//   var charCode = input[i].charCodeAt();
+//   if (charCode >= 97 && charCode <= 122) {
+//     output += String.fromCharCode(charCode - 32);
+//   } else {
+//     output += input[i];
+//   }
+// }
+
+// document.write("User input: " + input + "<br/>Upper case: " + output);
+
+// QUESTION 11
+// var input = prompt("Enter a sentence or word", "peanuts");
+// var output = "";
+// for (var i = 0; i < input.length; i++) {
+//   if (input[i - 1] === " " || i === 0) {
+//     var charCode = input[i].charCodeAt();
+//     if (charCode >= 97 && charCode <= 122) {
+//       output += String.fromCharCode(charCode - 32);
+//     } else {
+//       output += input[i];
+//     }
+//   } else {
+//     output += input[i];
+//   }
+// }
+// document.write("User input: " + input + "<br/>Upper case: " + output);
+
+// QUESTION 12
+// var num = 35.36;
+// var string = String(num);
+// document.write("Number: " + num + "<br/>Result: " + string);
+
+// QUESTION 13
+// var specialCharacter = ["[", "@", ".", ",", "!", "]"];
+// var userName = prompt("Enter a username");
+// var isValidUserName = true;
+
+// for (var i = 0; i < userName.length; i++) {
+//   if (specialCharacter.indexOf(userName[i]) !== -1) {
+//     isValidUserName = false;
+//     alert("Enter a valid user name");
+//     break;
+//   }
+// }
+
+// QUESTION 14
+// var userSearch = prompt(
+//   "Welcome to our bakery. What do you want to order sir/ma'am?"
+// );
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var isSearched = false;
+// var serachItem = userSearch.toLowerCase();
+
+// for (var i = 0; i < A.length; i++) {
+//   if (A[i] === serachItem) {
+//     isSearched = true;
+//     alert(A[i] + " is available at index " + i + " in our bakery");
+//     break;
+//   }
+// }
+
+// if (!isSearched) {
+//   alert("We are sorry. " + userSearch + " is not available in our bakery");
+// }
+
+// QUESTION 15
+// var userPassword = prompt("Enter your password");
+// var count = 0;
+// var hasPasswordBeginNumber = false;
+// var hasSpecialCharacter = false;
+
+// for (var i = 0; i < userPassword.length; i++) {
+//   var charCode = userPassword[i].charCodeAt();
+//   count++;
+//   if (i === 0 && charCode >= 48 && charCode <= 57) {
+//     hasPasswordBeginNumber = true;
+//     break;
+//   }
+//   if (
+//     charCode < 48 ||
+//     (charCode < 65 && charCode > 57) ||
+//     (charCode < 97 && charCode > 90) ||
+//     charCode > 122
+//   ) {
+//     hasSpecialCharacter = true;
+//     break;
+//   }
+// }
+
+// if (hasPasswordBeginNumber) {
+//   alert("Password can not begin with a number");
+// } else if (hasSpecialCharacter) {
+//   alert("Password only contain alphabets and numbers");
+// } else if (count < 6) {
+//   alert("Password should be at least 6 characters long");
+// }
+
+// QUESTION 16
+// var university = "University of Karachi";
+// var html = "";
+// university.split("");
+
+// for (var i = 0; i < university.length; i++) {
+//   html += university[i] + "<br/>";
+// }
+// document.write(html);
+
+// QUESTION 17
+// var userInput = prompt("Enter a word", "Pakistan");
+// document.write(
+//   "User input: " +
+//     userInput +
+//     "<br/>Last character of input: " +
+//     userInput[userInput.length - 1]
+// );
