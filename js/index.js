@@ -1160,33 +1160,26 @@
 
 // QUESTION 15
 // var userPassword = prompt("Enter your password");
-// var count = 0;
-// var hasPasswordBeginNumber = false;
-// var hasSpecialCharacter = false;
+// var userPasswordLength = userPassword.length;
 
-// for (var i = 0; i < userPassword.length; i++) {
-//   var charCode = userPassword[i].charCodeAt();
-//   count++;
-//   if (i === 0 && charCode >= 48 && charCode <= 57) {
-//     hasPasswordBeginNumber = true;
-//     break;
+// if (userPasswordLength >= 6) {
+//   for (var i = 0; i < userPasswordLength; i++) {
+//     var charCode = userPassword[i].charCodeAt();
+//     if (i === 0 && charCode >= 48 && charCode <= 57) {
+//       alert("Password can not begin with a number");
+//       break;
+//     }
+//     if (
+//       charCode < 48 ||
+//       (charCode < 65 && charCode > 57) ||
+//       (charCode < 97 && charCode > 90) ||
+//       charCode > 122
+//     ) {
+//       alert("Password only contain alphabets and numbers");
+//       break;
+//     }
 //   }
-//   if (
-//     charCode < 48 ||
-//     (charCode < 65 && charCode > 57) ||
-//     (charCode < 97 && charCode > 90) ||
-//     charCode > 122
-//   ) {
-//     hasSpecialCharacter = true;
-//     break;
-//   }
-// }
-
-// if (hasPasswordBeginNumber) {
-//   alert("Password can not begin with a number");
-// } else if (hasSpecialCharacter) {
-//   alert("Password only contain alphabets and numbers");
-// } else if (count < 6) {
+// } else {
 //   alert("Password should be at least 6 characters long");
 // }
 
@@ -1208,3 +1201,76 @@
 //     "<br/>Last character of input: " +
 //     userInput[userInput.length - 1]
 // );
+
+/**
+ * CHAPTERS 26-30
+ */
+
+// QUESTION 1
+// var userNumber = +prompt("Enter a positive number");
+// if (userNumber > 0) {
+//   var html = "Number:" + userNumber;
+//   html += "<br/>Round off value: " + Math.round(userNumber);
+//   html += "<br/>Floor value: " + Math.floor(userNumber);
+//   html += "<br/>Ceil value: " + Math.ceil(userNumber);
+//   document.write(html);
+// } else {
+//   alert("Enter positive number");
+// }
+
+// QUESTION 2
+// var userNumber = +prompt("Enter a negative number");
+// if (userNumber < 0) {
+//   var html = "Number:" + userNumber;
+//   html += "<br/>Round off value: " + Math.round(userNumber);
+//   html += "<br/>Floor value: " + Math.floor(userNumber);
+//   html += "<br/>Ceil value: " + Math.ceil(userNumber);
+//   document.write(html);
+// } else {
+//   alert("Enter negative number");
+// }
+
+// QUESTION 3
+// var userNumber = +prompt("Enter a number");
+// document.write(
+//   "The absolute value of " + userNumber + " is " + Math.abs(userNumber)
+// );
+
+// QUESTION 4
+// var diceRandomNumbers = Math.floor(Math.random() * 6) + 1;
+// document.write("Random dice value: " + diceRandomNumbers);
+
+// QUESTION 5
+// var coinToss = Math.floor(Math.random() * 2) + 1;
+// var tossResult = "Tails";
+// if (coinToss === 2) tossResult = "Heads";
+// document.write(coinToss + "<br/>Random coin value: " + tossResult);
+
+// QUESTION 6
+// var randomNumbers = Math.floor(Math.random() * 100) + 1;
+// document.write("Random number between 1 and 100: " + randomNumbers);
+
+// QUESTION 7
+// var userWeight = prompt("Enter your weight in kilograms");
+// userWeight = Math.abs(parseFloat(userWeight));
+
+// if (userWeight !== NaN) {
+//   document.write("The weight of user is " + userWeight + " kilograms");
+// }
+
+// QUESTION 8
+// var userNumber = parseFloat(prompt("Enter a number between 1 and 10"));
+// if (userNumber !== NaN) {
+//   if (userNumber > 0 && userNumber < 11) {
+//     var secretNumber = Math.floor(Math.random() * 10 + 1);
+//     if (secretNumber === userNumber) {
+//       alert("Congratulations! you won");
+//     } else {
+//       alert("Sorry! you loss");
+//     }
+//   } else {
+//     alert("Enter a number between 1 and 10");
+//   }
+// } else {
+//   alert("Enter a valid number");
+// }
