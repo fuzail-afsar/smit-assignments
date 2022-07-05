@@ -1274,3 +1274,132 @@
 // } else {
 //   alert("Enter a valid number");
 // }
+
+/**
+ * CHAPTERS 31-34
+ */
+
+// QUESTION 1
+// document.write(new Date());
+
+// QUESTION 2
+// var months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+// alert("Current month: " + months[new Date().getMonth()]);
+
+// QUESTION 3
+// var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// alert("Today is " + days[new Date().getDay()]);
+
+// QUESTION 4
+// var day = new Date().getDay();
+// if (day === 0 || day === 6) {
+//   alert("It's fun day");
+// } else {
+//   alert("It's working day");
+// }
+
+// QUESTION 5
+// if (new Date().getDate() < 16) {
+//   alert("First fifteen days of the month");
+// } else {
+//   alert("Last days of the month");
+// }
+
+// QUESTION 6
+// var date = new Date();
+// var milliSeconds = date.getTime();
+
+// document.write("Current Date: " + date + "<br/>");
+// document.write(
+//   "Elapsed milliseconds since January 1, 1970 : " + milliSeconds + "<br/>"
+// );
+// document.write(
+//   "Elapsed minutes since January 1, 1970 : " + milliSeconds / (1000 * 60)
+// );
+
+// QUESTION 7
+// if (new Date().getHours() < 12) {
+//   alert("It's AM");
+// } else {
+//   alert("It's PM");
+// }
+
+// QUESTION 8
+// var laterDate = new Date("31 dec 2020");
+// document.write("Later date: " + laterDate);
+
+// QUESTION 9
+// var ramadanTime = new Date("18 june 2015").getTime();
+// var currentTime = new Date().getTime();
+// var daysPassed = (currentTime - ramadanTime) / (1000 * 60 * 60 * 24);
+// alert(Math.round(daysPassed) + " days have passed since 1st Ramadan, 2015");
+
+// QUESTION 10
+// var beginningTime = new Date("1 january 2015").getTime();
+// var currentDate = new Date();
+// var currentTime = currentDate.getTime();
+// var elapsedSeconds = Math.round((currentTime - beginningTime) / 1000);
+// document.write(
+//   "On reference date " +
+//     currentDate +
+//     ", " +
+//     elapsedSeconds +
+//     " seconds had passed since beginning of 2015"
+// );
+
+// QUESTION 11
+// var currentDate = new Date();
+// document.write("Current date: " + currentDate + "<br/>");
+// currentDate.setHours(currentDate.getHours() + 1);
+// document.write("1 hour ago, it was " + currentDate + "<br/>");
+
+// QUESTION 12
+// var date = new Date();
+// var currentDate = new Date();
+// date.setFullYear(date.getFullYear() - 100);
+
+// alert("Current date: " + currentDate + "\n" + "100 years back, it was" + date);
+
+// QUESTION 13
+// var userAge = parseInt(prompt("Enter you age"));
+// var currentYear = new Date().getFullYear();
+// document.write(
+//   "Your age is " +
+//     userAge +
+//     "<br/>Your birth year is " +
+//     (currentYear - userAge)
+// );
+
+// QUESTION 14
+// var unitCharges = 16;
+// var noOfUnits = 189;
+// var netAmount = unitCharges * noOfUnits;
+// var lateAmount = 0;
+// var grossAmount = netAmount + lateAmount;
+
+// var billHtml = "<h1>K-Electric Bill</h1>";
+// billHtml += "<p>Customer Name: <b>Fuzail</b></p>";
+// billHtml += "<p>Month: <b>July</b></p>";
+// billHtml += "<p>Number of units: <b>" + noOfUnits + "</b></p>";
+// billHtml += "<p>Chagres per units: <b>" + unitCharges + "</b></p>";
+// billHtml += "<br/>";
+// billHtml +=
+//   "<p>Net Amount Payable (within Due Date): <b>" + netAmount + "</b></p>";
+// billHtml += "<p>Late payment surchages: <b>" + lateAmount + "</b></p>";
+// billHtml +=
+//   "<p>Gross Amount Payable (after Due Date): <b>" + grossAmount + "</b></p>";
+
+// document.write(billHtml);
