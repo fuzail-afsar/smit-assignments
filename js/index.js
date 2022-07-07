@@ -1403,3 +1403,177 @@
 //   "<p>Gross Amount Payable (after Due Date): <b>" + grossAmount + "</b></p>";
 
 // document.write(billHtml);
+
+/**
+ * CHAPTERS 35-38
+ */
+
+// QUESTION 1
+// function showDate() {
+//   console.log(new Date());
+// }
+// showDate();
+
+// QUESTION 2
+// function greetings(firstName, lastName) {
+//   console.log("Welcome " + firstName + " " + lastName);
+// }
+// greetings("fuzail", "ahmed");
+
+// QUESTION 3
+// function sumByUser() {
+//   var num1 = parseFloat(prompt("Enter first number "));
+//   var num2 = parseFloat(prompt("Enter second number "));
+//   if (!isNaN(num1) && !isNaN(num2)) {
+//     return num1 + num2;
+//   } else {
+//     console.log("Error: Enter valid numberss");
+//   }
+// }
+// sumByUser();
+
+// QUESTION 4
+// function calculator(num1, num2, operator) {
+//   if (operator === "+") {
+//     return num1 + num2;
+//   } else if (operator === "-") {
+//     return num1 - num2;
+//   } else if (operator === "*") {
+//     return num1 * num2;
+//   } else if (operator === "/") {
+//     return num1 / num2;
+//   } else if (operator === "%") {
+//     return num1 % num2;
+//   }
+// }
+// function showOperation(num1, num2, operator) {
+//   if (isNaN(num1) || isNaN(num2))
+//     return console.log("Error: Enter valid numbers");
+//   if (
+//     operator !== "+" &&
+//     operator !== "-" &&
+//     operator !== "*" &&
+//     operator !== "/" &&
+//     operator !== "%"
+//   )
+//     return console.log("Error: Enter a valid operator '+, -, *, /'");
+
+//   document.write(
+//     num1 +
+//       " " +
+//       operator +
+//       " " +
+//       num2 +
+//       " = " +
+//       calculator(num1, num2, operator)
+//   );
+// }
+
+// showOperation(12, 32, "+");
+
+// QUESTION 5
+// function getSquare(num) {
+//   return num * num;
+// }
+// console.log(getSquare(4));
+
+// QUESTION 6
+// function getFactorial(num) {
+//   if (isNaN(num)) return num + " is not valid number";
+
+//   for (var i = num - 1; i > 0; i--) {
+//     num *= i;
+//   }
+//   return num;
+// }
+// console.log(getFactorial(5));
+
+// QUESTION 7
+// function showCount(startNum, endNum) {
+//   var html = "";
+//   for (var i = startNum; i <= endNum; i++) {
+//     html += i + "<br />";
+//   }
+//   document.write(html);
+// }
+// showCount(1, 10);
+
+// QUESTION 8
+// function calculateHypotenuse(base, perpendicular) {
+//   function calculateSquare(num) {
+//     return num * num;
+//   }
+//   return Math.sqrt(calculateSquare(base) + calculateSquare(perpendicular));
+// }
+// console.log(calculateHypotenuse(2, 3));
+
+// QUESTION 9
+// function calculateRectangleArea(width, height) {
+//   return width * height;
+// }
+// console.log(calculateRectangleArea(2, 3));
+
+// var width = 4;
+// var height = 10;
+// console.log(calculateRectangleArea(width, height));
+
+// QUESTITON 10
+// function isPalindrome(str) {
+//   var strLength = str.length;
+//   for (var i = 0; i < strLength / 2; i++) {
+//     if (str[i] !== str[strLength - i - 1]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(isPalindrome("madam"));
+
+// QUESTITON 11
+// function toCapatalize(str) {
+//   var capatalizeText = "";
+//   for (var i = 0; i < str.length; i++) {
+//     if (str[i - 1] === " " || i === 0) {
+//       capatalizeText += str[i].toUpperCase();
+//     } else {
+//       capatalizeText += str[i];
+//     }
+//   }
+//   return capatalizeText;
+// }
+// console.log(toCapatalize("the quick brown fox"));
+
+// QUESTION 12
+// function getLogestWord(str) {
+//   str = str.split(" ");
+//   var longestWord = "";
+//   for (var i = 0; i < str.length; i++) {
+//     if (str[i].length > longestWord.length) {
+//       longestWord = str[i];
+//     }
+//   }
+//   return longestWord;
+// }
+// console.log(getLogestWord("Web Development Tutorial"));
+
+// QUESTION 13
+// function getOccuranceByLetter(str, letter) {
+//   var letterOccurance = 0;
+//   for (var i = 0; i < str.length; i++) {
+//     if (str[i] === letter) {
+//       letterOccurance++;
+//     }
+//   }
+//   return letterOccurance;
+// }
+// console.log(getOccuranceByLetter("JSResourceS.com", "o"));
+
+// QUESTION 14
+// function calcCircumference(radius) {
+//   return "The circumference is " + 2 * Math.PI * radius;
+// }
+// function calcArea(radius) {
+//   return "The area is " + Math.PI * radius * radius;
+// }
+// console.log(calcCircumference(5));
+// console.log(calcArea(5));
