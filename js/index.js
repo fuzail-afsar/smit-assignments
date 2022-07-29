@@ -1577,3 +1577,178 @@
 // }
 // console.log(calcCircumference(5));
 // console.log(calcArea(5));
+
+/**
+ * CHAPTERS 38-40
+ */
+
+// QUESTION 1
+// function power(a, b) {
+//   return a ** b;
+// }
+// console.log(power(2, 5));
+
+// QUESTION 2
+// var year = parseInt(prompt("Enter a year", 2000));
+// function isLeapYear(year) {
+//   if (year % 4) return false;
+
+//   return true;
+// }
+// alert(isLeapYear(year) + " " + year + " is a leap year");
+
+// QUESTION 3
+// function triangleArea(a, b, c) {
+//   var s = (a + b + c) / 2;
+//   return s * (s - a) * (s - b) * (s - c);
+// }
+// console.log(triangleArea(2, 3, 4));
+
+// QUESTION 4
+// function sum(arr) {
+//   var sum = 0;
+//   for (var i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum;
+// }
+// function average(arr) {
+//   return sum(arr) / arr.length;
+// }
+// function percentage(obtainedMarks, totalMarks) {
+//   return (obtainedMarks / totalMarks) * 100 + "%";
+// }
+// function result() {
+//   var marks = [
+//     +prompt("Enter 1 subject marks"),
+//     +prompt("Enter 2 subject marks"),
+//     +prompt("Enter 3 subject marks"),
+//   ];
+//   alert(
+//     "Your average score is: " +
+//       average(marks) +
+//       ". Your percentage is: " +
+//       percentage(sum(marks), 300)
+//   );
+// }
+// result();
+
+// QUESTION 5
+// function customIndexOf(str, character) {
+//   for (var i = 0; i < str.length; i++) {
+//     if (str[i] === character) return i;
+//   }
+//   return -1;
+// }
+// console.log(customIndexOf("hello world", "d"));
+
+// QUESTION 6
+// function deleteVowels(str) {
+//   var newStr = "";
+//   for (var i = 0; i < str.length; i++) {
+//     switch (str[i].toLowerCase()) {
+//       case "a":
+//       case "e":
+//       case "i":
+//       case "o":
+//       case "u":
+//         break;
+//       default:
+//         newStr += str[i];
+//     }
+//   }
+//   return newStr;
+// }
+
+// console.log(deleteVowels("Apple"));
+
+// QUESTION 7
+// function getConsecutiveVowelOccurance(str, consecutiveValue = 2) {
+//   var count = 0;
+//   var state = 0;
+//   for (var i = 0; i < str.length; i++) {
+//     switch (str[i].toLowerCase()) {
+//       case "a":
+//       case "e":
+//       case "i":
+//       case "o":
+//       case "u":
+//         state++;
+//         break;
+//       default:
+//         state = 0;
+//     }
+//     if (state === consecutiveValue) {
+//       count++;
+//       state = 0;
+//     }
+//   }
+//   return count;
+// }
+// console.log(
+//   getConsecutiveVowelOccurance(
+//     "Pleases read this application and give me gratuity"
+//   )
+// );
+
+// QUESTION 8
+// function kilometersToMeters(km) {
+//   return km * 1000;
+// }
+
+// function kilometersToFeets(km) {
+//   return km * 3280.84;
+// }
+
+// function kilometersToInches(km) {
+//   return km * 39370.1;
+// }
+
+// function kilometersToCentimeters(km) {
+//   return km * 100000;
+// }
+// var km = +prompt("Enter distance between two cities (in km)");
+// var kmHtml = km + " Kilometers = ";
+// var html = kmHtml + kilometersToMeters(km) + " meters\n";
+// html += kmHtml + kilometersToFeets(km) + " feets\n";
+// html += kmHtml + kilometersToInches(km) + " inches\n";
+// html += kmHtml + kilometersToCentimeters(km) + " centimeters";
+// alert(html);
+
+// QUESTION 9
+// function calculateOvertime(perHourRate, totalHours, overTimeRange = 40) {
+//   if (totalHours > overTimeRange) {
+//     return (parseInt(totalHours) - overTimeRange) * perHourRate;
+//   }
+// }
+
+// console.log(calculateOvertime(12, 45));
+
+// QUESTION 10
+// function getCurrencyInWords(amount) {
+//   // prettier-ignore
+//   var hundredNotes = fiftyNotes = tenNotes = 0;
+//   var hundred = 100,
+//     fifty = 50,
+//     ten = 10;
+
+//   hundredNotes = Math.floor(amount / hundred);
+//   amount %= hundred;
+
+//   fiftyNotes = Math.floor(amount / fifty);
+//   amount %= fifty;
+
+//   tenNotes = Math.floor(amount / ten);
+//   amount %= ten;
+
+//   return (
+//     "You will have " +
+//     hundredNotes +
+//     " hundred notes " +
+//     fiftyNotes +
+//     " fifty notes " +
+//     tenNotes +
+//     " ten notes"
+//   );
+// }
+// alert(getCurrencyInWords(+prompt("Enter amount to withdraw!!")));
