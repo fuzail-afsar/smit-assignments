@@ -24,9 +24,7 @@ window.onkeydown = function (event) {
   if (event.keyCode === 65) {
     character.src = characterImagesPath + "/character-attack.gif";
   }
-};
-
-window.onkeyup = function (event) {
-  var character = document.getElementById("user-character");
-  character.src = characterImagesPath + "/character-stop.gif";
+  setTimeout(function () {
+    character.src = characterImagesPath + "/character-stop.gif";
+  }, 1000);
 };
