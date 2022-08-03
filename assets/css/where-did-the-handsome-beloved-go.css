@@ -1,0 +1,9 @@
+@font-face {
+    font-family: DancingScript;
+    src: url(../fonts/dancing-script/DancingScript-Regular.ttf);
+}
+
+pre {
+    font-family: DancingScript, cursive, Poppins, "Times New Roman";
+    font-size: 24px;
+}

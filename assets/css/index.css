@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Esteban;
+    src: url(../fonts/esteban/Esteban-Regular.ttf);
+}
+
+pre {
+    font-family: Esteban, Poppins, "Times New Roman";
+}

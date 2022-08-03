@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Hurricane;
+    src: url(../fonts/hurricane/Hurricane-Regular.ttf);
+}
+
+pre {
+    font-family: Hurricane, cursive, Poppins, "Times New Roman";
+    font-size: 24px;
+}

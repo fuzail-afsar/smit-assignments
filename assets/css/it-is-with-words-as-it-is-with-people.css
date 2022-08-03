@@ -1,0 +1,9 @@
+@font-face {
+    font-family: inspiration;
+    src: url(../fonts/inspiration/Inspiration-Regular.ttf);
+}
+
+pre {
+    font-family: inspiration, Poppins, "Times New Roman";
+    font-size: 24px;
+}

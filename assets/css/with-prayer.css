@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Shadows Into Light;
+    src: url(../fonts/shadows-into-light/ShadowsIntoLight-Regular.ttf);
+}
+
+pre {
+    font-family: "Shadows Into Light", cursive, Poppins, "Times New Roman";
+    font-size: 18px;
+}

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-SemiBold.ttf);
+    font-weight: semibold;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+body {
+    font-family: Poppins, "Times New Roman";
+    background-color: #282828;
+}
+
+aside {
+    flex-basis: 350px;
+}
+
+section {
+    background-color: #ffffff;
+    flex-grow: 1;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    padding: 50px 25px;
+}
+
+.relative {
+    position: relative;
+}
+
+aside ul {
+    list-style: none;
+    padding-right: 20px;
+}
+
+aside ul li {
+    margin-bottom: 25px;
+}
+
+aside ul li a {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+aside ul li a:hover {
+    color: #00b4f0
+}
+
+section div {
+    padding: 10px 50px;
+    max-width: 600px;
+    margin-left: auto;
+}
+
+section div span {
+    background-color: #00b4f0;
+    color: #343434;
+    padding: 10px 15px;
+    font-weight: 600;
+    position: absolute;
+    left: -10px;
+    top: 45px;
+}
