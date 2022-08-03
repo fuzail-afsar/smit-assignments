@@ -1,0 +1,20 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('../images/bg.gif') center / cover no-repeat;
+    position: relative;
+    height: 100%;
+    margin: 0px;
+}
+
+.character {
+    position: absolute;
+    bottom: 30px;
+    transform: rotateY(180deg);
+}
+
+#user-character {
+    left: 20px;
+}
