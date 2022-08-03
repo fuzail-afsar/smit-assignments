@@ -1,0 +1,347 @@
+@font-face {
+    font-family: Dosis;
+    src: url(../assets/fonts/Dosis/Dosis-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Gilda Display";
+    src: url(../assets/fonts/Gilda_Display/GildaDisplay-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Josefin Sans";
+    src: url(../assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Philosopher";
+    src: url(../assets/fonts/Philosopher/Philosopher-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Philosopher";
+    src: url(../assets/fonts/Philosopher/Philosopher-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Dosis;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Philosopher;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #ed1c24;
+    color: #ffffff;
+    padding: 10px 70px;
+    border-radius: 5px;
+    display: block;
+    font-family: "Philosopher";
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-primary {
+    color: #ed1c24;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.divider {
+    width: 200px;
+    height: 2px;
+    margin: 0 auto 10px;
+    background-color: #ffffff;
+}
+
+.divider-primary {
+    background-color: #ed1c24;
+}
+
+.divider-left {
+    margin-left: 0px;
+}
+
+.divider-spacing {
+    margin-bottom: 30px;
+}
+
+.vertical-top {
+    vertical-align: top;
+}
+
+/* Header */
+header {
+    padding-top: 10px;
+}
+
+header nav {
+    width: 70%;
+    font-family: "Philosopher";
+    font-weight: 600;
+}
+
+header nav ul li {
+    margin-right: 5%;
+}
+
+.banner {
+    background: url('../assets/images/banners/home.jpg') center / cover no-repeat fixed;
+    padding: 160px 0;
+}
+
+.banner .welcome h1 {
+    font-family: "Josefin Sans";
+    font-size: 100px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.banner .welcome h6 {
+    font-family: "Josefin Sans";
+}
+
+.brands div {
+    padding: 50px 15px;
+    background-color: #FFFFFFE0;
+    border-radius: 4px;
+    width: 28%;
+    margin-right: 1%;
+    display: inline-block;
+}
+
+.brands div:last-child {
+    margin-right: 0px;
+}
+
+.brands div img {
+    max-height: 90px;
+    width: auto;
+}
+
+/* Franchise */
+.franchise {
+    background: url('../assets/images/franchise/franchise-bg.jpg') center / cover no-repeat fixed;
+    padding: 50px 0 40px;
+}
+
+.franchise hr {
+    border-color: #515151;
+    margin-bottom: 70px;
+}
+
+.locations {
+    margin-bottom: 40px;
+}
+
+.locations>div {
+    display: inline-block;
+    width: 29%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin-right: 1%;
+    overflow: hidden;
+}
+
+.locations>div>div {
+    top: 30%
+}
+
+.locations-opening-soon>div {
+    background-color: #ffffff;
+    color: #000000;
+    display: inline-block;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    border: 2px solid red;
+    padding: 45px 10px 35px;
+    border-radius: 4px;
+    overflow: hidden;
+    font-family: "Gilda Display";
+}
+
+.locations-opening-soon-col-3>div {
+    width: 31%;
+}
+
+.locations-opening-soon-col-2>div {
+    width: 41%;
+}
+
+.locations-opening-soon>div:last-child {
+    margin-left: 0px;
+}
+
+.locations-opening-soon>div img {
+    margin-bottom: 10px;
+}
+
+.village {
+    padding-top: 60px;
+}
+
+.opening {
+    font-size: 25px;
+}
+
+/* Footer */
+footer {
+    background-color: #222222;
+    border-top: 2px solid #ed1c24;
+    padding-top: 70px;
+    color: #e1e1e1;
+}
+
+footer a {
+    color: #e1e1e1;
+}
+
+.footer-main>div {
+    display: inline-block;
+    width: 24%;
+    vertical-align: text-top;
+    padding: 0 10px;
+}
+
+.footer-main>div ul {
+
+    padding-left: 0px;
+    list-style-position: inside;
+}
+
+.footer-main .about img {
+    margin-bottom: 10px;
+}
+
+.footer-main .about p {
+    text-align: justify;
+}
+
+.footer-main .quick-links ul {
+    list-style-image: url("../assets/images/icons/next.png");
+}
+
+.footer-main .quick-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-main .contact-us ul {
+    list-style: none;
+    padding-left: 0px;
+    /* list-style-image: url("../assets/images/icons/next.png"); */
+}
+
+.footer-main .contact-us ul li {
+    margin-bottom: 10px;
+}
+
+.footer-main .contact-us ul img {
+    margin-right: 10px;
+}
+
+.footer-main .follow-us .social-media {
+    margin-bottom: 20px;
+}
+
+.footer-main .follow-us .social-media a {
+    background: rgb(139, 180, 95);
+    background: linear-gradient(90deg, rgba(139, 180, 95, 1) 48%, rgba(100, 158, 44, 1) 82%);
+    padding: 10px 10px 5px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.footer-main .download-app>div {
+    margin-bottom: 10px;
+}
+
+.footer-main>div:first-child {
+    padding-left: 0px;
+}
+
+.footer-main>div:last-child {
+    padding-right: 0px;
+}
+
+footer .terms-conidtion {
+    border-top: 1px solid #515151;
+    text-align: center;
+}
+
+footer .terms-conidtion span {
+    border-right: 1px solid #515151;
+    padding: 10px 10px 10px 5px;
+    display: inline-block;
+}
+
+footer .terms-conidtion span:last-child {
+    padding: right 0px;
+    border-right: 0px
+}
+
+footer .bottom-bar {
+    background-color: #ffffff;
+    padding: 10px 0px;
+}
+
+footer .bottom-bar p {
+    color: #757575;
+    text-align: center;
+    margin-bottom: 0;
+}
