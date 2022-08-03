@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Detail Form</title>
+  </head>
+  <body>
+    <br />
+    <br />
+    <table cellspacing="0" cellpadding="12" align="center">
+      <thead>
+        <tr>
+          <th bgcolor="#a4dd9e">Step 1: Account</th>
+          <th bgcolor="#72a3de">Step 2: Personal Details</th>
+          <th bgcolor="#cccccc">Step 3: Your Review</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <form>
+              <fieldset>
+                <legend>Personal Details</legend>
+                <br />
+                <div>
+                  <label for="first-name">First Name:</label><br />
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    size="86"
+                    placeholder="Enter First Name"
+                  />
+                </div>
+                <br />
+                <div>
+                  <label for="last-name">Last Name:</label><br />
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    size="86"
+                    placeholder="Enter Last Name"
+                  />
+                </div>
+                <br />
+                <div>
+                  <label for="cnic">CNIC:</label><br />
+                  <input
+                    type="text"
+                    name="cnic[]"
+                    id="cnic"
+                    size="1"
+                    maxlength="1"
+                  />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <span>-</span>
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                  <span>-</span>
+                  <input type="text" name="cnic[]" size="1" maxlength="1" />
+                </div>
+                <br />
+                <div>
+                  <label for="social-link">Social Link:</label><br />
+                  <input
+                    type="url"
+                    name="social-link"
+                    id="social-link"
+                    size="86"
+                    placeholder="Enter Facebook/Linkedin profile link"
+                  />
+                </div>
+                <br />
+                <div>
+                  <a href="step-1.html">
+                    <img src="images/back.png" width="130" />
+                  </a>
+                  <a href="step-3.html">
+                    <img src="images/next.png" width="130" />
+                  </a>
+                </div>
+              </fieldset>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
