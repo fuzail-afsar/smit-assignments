@@ -1,0 +1,77 @@
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-SemiBold.ttf);
+    font-weight: semibold;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    background: url(../images/mosque.jpg) center / cover no-repeat;
+}
+
+.calendar {
+    text-align: center;
+    max-width: 800px;
+    margin: 20px auto 10px;
+    padding-top: 20px;
+    color: #fdfdfd;
+}
+
+table {
+    margin-top: 10px;
+    border-spacing: 0;
+    width: 100%;
+    color: #000000;
+}
+
+table thead {
+    background-color: #88d5ff;
+    /* border-bottom: 1px solid #e3e3e3; */
+}
+
+table tbody {
+    background-color: #e3e3e3;
+}
+
+table tr td, table tr th {
+    padding: 10px 12px;
+}
+
+table tbody th, table tbody td {
+    border-bottom: 1px solid #e3e3e3;
+    border-right: 1px solid red;
+}
+
+table tbody td:last-child {
+    border-right: 0px
+}
+
+table tbody tr:last-child td {
+    border-bottom: 0px
+}
+
+table tbody tr td:nth-child(odd), table tbody th {
+    background-color: #f9faf5;
+}
+
+table td.sehri-time, table td.iftar-time {
+    font-weight: 700;
+}
