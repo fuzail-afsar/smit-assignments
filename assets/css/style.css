@@ -1,0 +1,71 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url(../images/bg.jpg) center top -110px / cover no-repeat #1e1e27;
+    color: #ffffff;
+    font-size: 1.8rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+
+}
+
+main {
+    width: 100%;
+    max-width: 99.2rem;
+    padding-top: 25rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 5rem;
+
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: .5rem;
+}
+
+.timer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.timer-wrapper .time-left {
+    display: block;
+}
+
+.timer-wrapper .time-left-label {
+    font-size: 3rem;
+}
+
+.timer-label {
+    font-size: 5rem;
+}
+
+.eid-days {
+    display: flex;
+    justify-content: space-between;
+}
+
+.eid-days .eid-day {
+    padding: 0px 6rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    background: rgb(255, 226, 161);
+    background: linear-gradient(240deg, rgb(255 226 161 / 89%) 1%, rgba(201, 134, 86, 1) 99%);
+}
+
+.eid-days .eid-day p {
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0px;
+}
