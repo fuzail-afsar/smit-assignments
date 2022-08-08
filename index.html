@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Post App</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="py-1 sticky-top bg-white shadow-sm">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a
+                class="navbar-brand text-primary fs-4 fw-bold"
+                href="./index.html"
+                >Post App</a
+              >
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row py-4 view-port-min-80">
+        <!-- Side Bar -->
+        <aside class="col-12 mb-4 mb-md-0 col-md-5 col-lg-4">
+          <div class="card shadow-sm border-0">
+            <div class="card-body">
+              <form id="user-info" onsubmit="userFormSubmitHandler()">
+                <legend class="fw-bold">User Info</legend>
+                <div class="mb-3">
+                  <label for="user-profile" class="form-label"
+                    >User Profile</label
+                  >
+                  <img src="" alt="user-profile" class="d-none" />
+                  <input
+                    type="file"
+                    id="user-profile"
+                    aria-label="profile image"
+                    accept="image/*"
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="user-name" class="form-label">User Name</label>
+                  <input type="text" class="form-control" id="user-name" />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">
+                  Save
+                </button>
+              </form>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="col">
+          <!-- Create Post -->
+          <section id="write-post" class="pb-4">
+            <!-- <div class="container"> -->
+            <div class="row">
+              <div class="col-12">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body d-flex">
+                    <div class="me-2">
+                      <img
+                        src="./assets/images/avatar.png"
+                        alt="avatar"
+                        class="avatar"
+                      />
+                    </div>
+                    <button
+                      type="button"
+                      disabled
+                      class="btn btn-primary flex-grow-1 flex-shrink-1 rounded-pill"
+                      data-bs-toggle="modal"
+                      data-bs-target="#create-post"
+                    >
+                      Write a post?
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- </div> -->
+          </section>
+
+          <!-- Posts Listing -->
+          <section id="posts-listing" class="pb-4">
+            <div class="row"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- Create Post Modal -->
+    <div
+      class="modal fade"
+      id="create-post"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="create-post-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form onsubmit="postFormSubmitHandler()">
+            <div class="modal-header">
+              <h5
+                class="modal-title text-center flex-grow-1 flex-shrink-1"
+                id="create-post-label"
+              >
+                Create post
+              </h5>
+              <button
+                type="button"
+                class="btn-close position-absolute close-bg-secondary-theme"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-2">
+                <textarea
+                  rows="5"
+                  id="post-content"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <div class="mb-2">
+                <input
+                  type="file"
+                  id="post-image"
+                  aria-label="post image"
+                  accept="image/*"
+                  class="form-control"
+                />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="submit"
+                class="btn btn-primary flex-grow-1 flex-shrink-1"
+                data-bs-dismiss="modal"
+              >
+                Post
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Toast -->
+    <div
+      class="toast-container text-bg-primary position-fixed bottom-0 end-0 p-3"
+    >
+      <div
+        id="toast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto"></strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-secondary-theme text-center py-3">
+      <div class="container">
+        <div class="col-12">
+          <p class="mb-0">
+            © <span id="year"></span>, developed by
+            <a
+              class="text-primary fw-bold"
+              target="_blank"
+              href="https://fuzailahmed.000webhostapp.com/"
+              >Fuzail</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

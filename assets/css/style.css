@@ -1,0 +1,59 @@
+@import url("./fonts/font.css");
+
+body {
+  background-color: #f0f2f5;
+  font-family: "Neuzeit Grotesk", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Filson Soft";
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+.bg-secondary-theme {
+  background-color: #e4e6eb;
+}
+
+.view-port-min-80 {
+  min-height: 80vh;
+}
+
+.avatar {
+  object-fit: cover;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.profile-image {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+  max-width: 10rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn-close {
+  background-size: .8em;
+}
+
+.close-bg-secondary-theme {
+  border-radius: 50%;
+  background-color: #e4e6eb;
+}
+
+#create-post .modal-header button.position-absolute {
+  right: 2rem;
+}
