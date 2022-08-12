@@ -1,0 +1,165 @@
+@import url("./fonts/font.css");
+
+/* Override Styles */
+body {
+  background-color: #fafafa;
+  font-family: "Neuzeit Grotesk", system-ui, -apple-system, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Filson Soft";
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+a, a:hover {
+  color: #9aca40;
+}
+
+.form-control {
+  border-color: #9aca40;
+}
+
+.form-control:focus {
+  border-color: #9aca40;
+  box-shadow: 0 0 0 0.25rem rgb(134 180 47 / 25%);
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  box-shadow: 0 0 0 0.25rem rgb(134 180 47 / 25%);
+}
+
+.list-group-item {
+  border-color: #f1f1f1;
+}
+
+.border-top {
+  border-color: #f2f2f2 !important;
+}
+
+.text-primary {
+  color: #9aca40 !important;
+}
+
+.btn-primary {
+  background-color: #9aca40;
+  border-color: #9aca40;
+}
+
+.btn-outline-primary {
+  color: #9aca40;
+  border-color: #9aca40;
+}
+
+.btn-outline-primary:hover {
+  background-color: #9aca40;
+  border-color: #9aca40;
+}
+
+.text-secondary {
+  color: #323232 !important;
+}
+
+.bg-secondary {
+  background-color: #323232 !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #323232;
+  border-color: #323232;
+}
+
+.btn-close {
+  background-size: .8em;
+}
+
+.close-bg-secondary-theme {
+  border-radius: 50%;
+  background-color: #e4e6eb;
+}
+
+/* Global Styles */
+.caret-left {
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.caret-left:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0.2rem;
+  background: url(../images/chevron-right-solid.svg) center/ contain no-repeat;
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+/* SideBar Styles */
+aside .phone-companies a:hover {
+  color: #9aca40 !important;
+}
+
+
+/* Sections Styles */
+#phone-listing .row img {
+  object-fit: contain;
+  height: 16.25rem;
+  /* max-width: 15rem; */
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* margin: 0 auto; */
+}
+
+#phone-listing .row .card .card-title a {
+  color: #212529;
+  text-decoration: none
+}
+
+#phone-listing .row .card .card-title a:hover {
+  color: #9aca40;
+}
+
+.colors {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  background-color: #9aca40;
+  justify-content: center;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  transition: all 350ms ease-out 150ms;
+  margin-top: 20px;
+  padding: .6rem 0;
+}
+
+.colors>div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+  outline: 2px solid #9aca40;
+  border: 3px solid #ffffff;
+  cursor: pointer;
+}
+
+#phone-listing .row .card .card-body {
+  position: relative;
+}
+
+#phone-listing .row .card:hover .colors {
+  visibility: visible;
+  margin-top: 0;
+  bottom: 0;
+}
