@@ -1,0 +1,20 @@
+.quizzes a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.quizzes .card {
+    border-radius: 0.75rem;
+    cursor: pointer;
+}
+
+.quizzes .card .card-img-top {
+    border-top-left-radius: .75rem;
+    border-top-right-radius: .75rem;
+}
+
+.quizzes img {
+    object-fit: cover;
+    width: 100%;
+    height: 10rem;
+}

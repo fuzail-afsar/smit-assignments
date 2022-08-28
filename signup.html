@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/auth.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <main>
+      <section>
+        <div class="container-fluid">
+          <div class="row justify-content-end align-items-center min-vh-100">
+            <div class="col ps-0 d-none d-md-block">
+              <img src="./assets/images/auth.jpeg" alt="auth" />
+            </div>
+            <div class="col-12 col-md-7 px-4">
+              <div class="card shadow border-0 mx-auto">
+                <div class="card-body p-4">
+                  <h1 class="mb-3">Sign Up For Quiz</h1>
+                  <form class="pb-3" id="signup">
+                    <div class="form-floating mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="username"
+                        placeholder="john-doe"
+                      />
+                      <label for="username">User Name</label>
+                      <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="name@example.com"
+                      />
+                      <label for="email">Email address</label>
+                      <div class="invalid-feedback"></div>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Password"
+                      />
+                      <label for="password">Password</label>
+                      <div class="invalid-feedback"></div>
+                    </div>
+                    <div>
+                      <button class="btn btn-primary" type="submit">
+                        Sign Up
+                      </button>
+                    </div>
+                  </form>
+                  <p>
+                    Already have an account <a href="./signin.html">Sign In</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="toast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto"></strong>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body"></div>
+      </div>
+    </div>
+
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/functions.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/auth.js"></script>
+  </body>
+</html>

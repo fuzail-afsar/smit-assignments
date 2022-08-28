@@ -1,0 +1,7 @@
+main .list-group .list-group-item .percent {
+    flex-basis: 2rem;
+}
+
+main .list-group .list-group-item .status {
+    flex-basis: 4rem;
+}
