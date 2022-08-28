@@ -10,14 +10,21 @@ function renderReportHtml() {
 
   var results = getUserResult(getLoggedInUser().username);
   var html = "";
-  for (var quizKey in results) {
-    var result = results[quizKey];
-    html += generateReportHtml({
-      quiz: quizKey,
-      percent: result.percent,
-      status: result.status,
-    });
+  if (!results) {
+    html = `<li class="list-group-item">
+      <h2 class="h6 mb-0">No results found</h1>
+    </li>`;
+  } else {
+    for (var quizKey in results) {
+      var result = results[quizKey];
+      html += generateReportHtml({
+        quiz: quizKey,
+        percent: result.percent,
+        status: result.status,
+      });
+    }
   }
+
   resultElem.innerHTML = html;
 }
 
