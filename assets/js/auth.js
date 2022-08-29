@@ -151,9 +151,6 @@ function signupFormSubmitHandler(event) {
     setLoggedInUser(user);
 
     window.location.assign("index.html");
-
-    emailElem.value = "";
-    passwordElem.value = "";
   } else {
     showToast("Signup Failed!", "User name already exist");
   }
@@ -171,6 +168,7 @@ function signinFormSubmitHandler(event) {
     user = matchUserCredentials(usernameElem.value, passwordElem.value);
     if (user) {
       setLoggedInUser(user);
+
       window.location.assign("index.html");
     } else {
       showToast("Signin Failed!", "Credentials not matched");

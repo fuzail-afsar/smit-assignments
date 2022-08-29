@@ -14,4 +14,4 @@ Listing of different quizzes.
 
 The quiz will auto-save when users close, change and refresh the browser window.
 
-Listing results of Given quiz
+Listing results of given quiz
