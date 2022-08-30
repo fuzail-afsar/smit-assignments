@@ -1,0 +1,148 @@
+@import url("./fonts/font.css");
+
+body {
+    font-family: "Filson Soft";
+    margin: 0rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(254, 255, 255);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(254, 255, 255, 1) 0%, rgba(210, 235, 249, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(254, 255, 255, 1) 0%, rgba(210, 235, 249, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(254, 255, 255, 1) 0%, rgba(210, 235, 249, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#feffff', endColorstr='#d2ebf9', GradientType=1);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+main {
+    max-width: 30rem;
+    width: 100%;
+    background-color: #10101d;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: .4rem;
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 75%);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0rem;
+}
+
+form {
+    display: flex;
+}
+
+button {
+    border: 0rem;
+    background: inherit;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    padding: 0.6rem 0.6rem 0.6rem 0;
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom-color: #ffffff;
+    border-radius: 0rem;
+    color: #ffffff;
+    width: 100%;
+    margin-right: 0.8rem;
+    /* transition: 0.2s; */
+    outline: 0rem;
+
+}
+
+input:focus {
+    border-bottom-color: #ee9ca7;
+    outline: 0rem;
+}
+
+input:focus-visible {
+    outline: 0rem;
+}
+
+form button {
+    flex: 0 0 2rem;
+    height: 2rem;
+    background: url(../images/add.svg) center / 1.125rem no-repeat #ee9ca7;
+    border-radius: 50%;
+    box-shadow: 0 0 .75rem 0 rgb(238 156 167 / 40%);
+}
+
+ul {
+    padding-left: 0rem;
+}
+
+ul li {
+    background-color: #191933;
+    border-radius: .25rem;
+    margin-bottom: .75rem;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+ul li input[type="checkbox"] {
+    flex: 0 0 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: url(../images/checked.svg) center / 0 no-repeat;
+    margin-right: .5rem;
+    margin-top: .25rem;
+    transition: 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+ul li input:checked {
+    background-size: .625rem;
+    border: 1px solid #ee9ca7;
+    background-color: #ee9ca7;
+}
+
+ul li input:checked+span {
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-text-decoration: line-through rgba(255, 255, 255, 0.8);
+    text-decoration: line-through rgba(255, 255, 255, 0.8);
+}
+
+ul li label {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    position: relative;
+    transition: 0.2s;
+    cursor: pointer;
+    flex-grow: 1;
+    word-break: break-word;
+}
+
+ul li button {
+    flex: 0 0 1rem;
+    height: 1rem;
+    margin-left: .5rem;
+    display: block;
+    background: center / 1rem no-repeat;
+}
+
+ul li button.delete {
+    background-image: url(../images/delete.svg);
+}
+
+ul li button.edit {
+    background-image: url(../images/edit.png);
+}
+
+.d-none {
+    display: none;
+}
+
+.visibility-hidden {
+    visibility: hidden;
+}
