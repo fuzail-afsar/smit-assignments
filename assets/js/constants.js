@@ -1,0 +1,2 @@
+var ASSETS_DIRECTORY = "./assets/";
+var IMAGES_DIRECTORY = ASSETS_DIRECTORY + "images/";

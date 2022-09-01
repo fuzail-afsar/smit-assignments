@@ -1,22 +1,22 @@
-var quizModalElem = document.getElementById("quiz-modal");
+(function () {
+  var quizModalElem = document.getElementById("quiz-modal");
 
-init();
-
-function init() {
-  renderQuizzesHtml();
-}
-
-function renderQuizzesHtml() {
-  var quizzesElem = document.getElementsByClassName("quizzes")[0];
-  var html = "";
-  for (var i = 0; i < quizzesData.length; i++) {
-    html += generateQuizzesColumnHtml(quizzesData[i], i);
+  function init() {
+    renderQuizzesHtml();
+    quizModalElem.addEventListener("show.bs.modal", showQuizModalHandler);
   }
-  quizzesElem.innerHTML = html;
-}
 
-function generateQuizzesColumnHtml(quiz, index) {
-  return `
+  function renderQuizzesHtml() {
+    var quizzesElem = document.getElementsByClassName("quizzes")[0];
+    var html = "";
+    for (var i = 0; i < quizzesData.length; i++) {
+      html += generateQuizzesColumnHtml(quizzesData[i], i);
+    }
+    quizzesElem.innerHTML = html;
+  }
+
+  function generateQuizzesColumnHtml(quiz, index) {
+    return `
     <div class="col">
       <div
         class="card h-100 pointer"
@@ -35,25 +35,29 @@ function generateQuizzesColumnHtml(quiz, index) {
           <h5 class="card-title mb-4">${quiz.title}</h5>
           <p class="card-text text-muted">
             <small>${quiz.totalQuestions} Questions | ${secToMins(
-    quiz.duration
-  )} Mins</small>
+      quiz.duration
+    )} Mins</small>
           </p>
         </div>
       </div>
     </div>
   `;
-}
+  }
 
-function showQuizModalHandler(event) {
-  var relatedTarget = event.relatedTarget;
-  var duration = relatedTarget.getAttribute("data-duration");
-  var totalQuestions = relatedTarget.getAttribute("data-total-questions");
-  var quizIndex = relatedTarget.getAttribute("data-quiz-index");
+  function setQuiz(quiz) {
+    sessionStorage.setItem("quiz", JSON.stringify(quiz));
+  }
 
-  var modalBodyElem = quizModalElem.querySelector(".modal-body");
-  var startQuizBtnElem = quizModalElem.querySelector(".start-quiz");
+  function showQuizModalHandler(event) {
+    var relatedTarget = event.relatedTarget;
+    var duration = relatedTarget.getAttribute("data-duration");
+    var totalQuestions = relatedTarget.getAttribute("data-total-questions");
+    var quizIndex = relatedTarget.getAttribute("data-quiz-index");
 
-  modalBodyElem.innerHTML = `
+    var modalBodyElem = quizModalElem.querySelector(".modal-body");
+    var startQuizBtnElem = quizModalElem.querySelector(".start-quiz");
+
+    modalBodyElem.innerHTML = `
     <ol>
       <li>
         You will have only
@@ -71,10 +75,11 @@ function showQuizModalHandler(event) {
     </ol>
   `;
 
-  startQuizBtnElem.addEventListener("click", function () {
-    setQuiz({ index: quizIndex });
-    window.location.assign("quiz.html");
-  });
-}
+    startQuizBtnElem.addEventListener("click", function () {
+      setQuiz({ index: quizIndex });
+      window.location.assign("quiz.html");
+    });
+  }
 
-quizModalElem.addEventListener("show.bs.modal", showQuizModalHandler);
+  return init();
+})();
