@@ -4,4 +4,4 @@
 
 ### Todo App
 
-This app is built using HTML, CSS, JavaScript.
+This app is built using HTML, CSS, JavaScript and local storage for database.

@@ -1,0 +1,39 @@
+body {
+    overflow: hidden;
+}
+
+.toast {
+    position: fixed;
+    bottom: 1.5625rem;
+    right: 1.875rem;
+    border-radius: .4rem;
+    background: #fff;
+    padding: 1rem 1.5625rem;
+    box-shadow: 0 0.375rem 1.25rem -0.333rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: translateX(calc(100% + 1.875rem));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+    max-width: 15rem;
+    width: 100%;
+}
+
+.toast.active {
+    transform: translateX(0%);
+}
+
+.toast .toast-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.toast .toast-content .toast-message {
+    font-weight: 400;
+    color: #666666;
+    font-size: .8rem;
+}
+
+.toast .toast-content .toast-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: .1rem;
+}

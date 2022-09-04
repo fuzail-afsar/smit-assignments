@@ -1,0 +1,37 @@
+main {
+    padding: 2rem;
+}
+
+main small {
+    color: #757575;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: .5rem;
+}
+
+form>div {
+    flex: 1 1 100%;
+    margin-bottom: 1rem;
+}
+
+form>div.error input {
+    border-bottom-color: #dc3545;
+}
+
+form>div.error .error-message {
+    font-size: 0.7rem;
+    color: #dc3545;
+}
+
+form button {
+    color: white;
+    flex-basis: auto;
+    height: auto;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    background: #ee9ca7;
+}
