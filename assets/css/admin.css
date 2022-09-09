@@ -1,0 +1,21 @@
+#applicant-section {
+    padding-bottom: 3rem;
+}
+
+#applicant-table tbody tr td img {
+    width: 1rem;
+}
+
+#applicant-table tr th:last-child {
+    width: 4.5rem;
+}
+
+#delete-applicant-modal .modal-header {
+    position: relative;
+}
+
+#delete-applicant-modal .modal-header .btn-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}

@@ -1,0 +1,16 @@
+.tab-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.upload-picture-wrapper label {
+    height: 6.375rem;
+    width: 6.375rem;
+    justify-content: center;
+    border-style: dashed;
+    cursor: pointer;
+}
+
+.upload-picture-wrapper ul {
+    font-size: .8rem;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/applicant-detail.css" />
+
+    <title>Saylani Welfare Int Trust</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white sticky-top shadow-sm visibility-hidden d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-md">
+              <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/logo.png" alt="Saylani" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#header-nav"
+                aria-controls="header-nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="header-nav">
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./admin.html">Admin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link logout-user" href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Banner -->
+      <section class="banner py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <img src="./assets/images/logo.png" alt="Saylani" />
+              <h1 class="mb-3">Applicant Detail</h1>
+              <p class="text-muted">Services - Education - Registration</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Applicant Detail Section -->
+      <section id="applicant-detail-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-10 mb-4 d-flex justify-content-center">
+              <img src="" alt="applicant" class="applicant-picture" />
+            </div>
+            <div class="col-12 col-md-10">
+              <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="city" class="form-label">City</label>
+                  <select
+                    id="city"
+                    class="form-select required"
+                    aria-label="select city"
+                  >
+                    <option value="" selected disabled hidden>
+                      Select city
+                    </option>
+                    <option>Karachi</option>
+                    <option>Hyderabad</option>
+                    <option>Lahore</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="course" class="form-label">Course</label>
+                  <select
+                    id="course"
+                    class="form-select required"
+                    aria-label="select course"
+                  >
+                    <option value="" selected disabled hidden>
+                      Select course
+                    </option>
+                    <option>Web and Mobile App</option>
+                    <option>AI</option>
+                    <option>ChatBot</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="full-name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="full-name"
+                    placeholder="Muhammad Fuzail Ahmed"
+                    class="form-control required"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="father-name" class="form-label"
+                    >Father Name</label
+                  >
+                  <input
+                    type="text"
+                    id="father-name"
+                    placeholder="Muhammad Afsar"
+                    class="form-control required"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="fuzail@gmail.com"
+                    class="form-control required email"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="0300 1234567"
+                    class="form-control required phone"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="cnic" class="form-label">CNIC</label>
+                  <input
+                    type="text"
+                    id="cnic"
+                    placeholder="01234-5678910-9"
+                    class="form-control required cnic"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="father-cnic" class="form-label">
+                    Father CNIC
+                  </label>
+                  <input
+                    type="text"
+                    id="father-cnic"
+                    placeholder="01234-5678910-9"
+                    class="form-control cnic"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="dob" class="form-label"> Date of Birth </label>
+                  <input
+                    type="date"
+                    id="dob"
+                    class="form-control required max-today"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="gender" class="form-label">Gender</label>
+                  <select
+                    id="gender"
+                    class="form-select required"
+                    aria-label="select gender"
+                  >
+                    <option value="" selected disabled hidden>
+                      Select gender
+                    </option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="address" class="form-label">Address</label>
+                  <input
+                    type="text"
+                    id="address"
+                    placeholder="A-0/1 block area"
+                    class="form-control required"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="last-qualification" class="form-label">
+                    Last Qualification
+                  </label>
+                  <select
+                    id="last-qualification"
+                    class="form-select required"
+                    aria-label="select last qualification"
+                  >
+                    <option value="" selected disabled hidden>
+                      Select last qualification
+                    </option>
+                    <option>Grades 5-8</option>
+                    <option>Matric</option>
+                    <option>Intermediate</option>
+                    <option>Undergraduate</option>
+                    <option>Graduate</option>
+                    <option>Masters</option>
+                    <option>PHD</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary w-100">
+                    SUBMIT
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/functions.js"></script>
+    <script src="./assets/js/FormValidation.js"></script>
+    <script src="./assets/js/Applicant.js"></script>
+    <script src="./assets/js/User.js"></script>
+    <script src="./assets/js/Toast.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/applicant-detail.js"></script>
+  </body>
+</html>

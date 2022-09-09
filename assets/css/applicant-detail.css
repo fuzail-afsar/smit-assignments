@@ -1,0 +1,11 @@
+#applicant-detail-section {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.applicant-picture {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
