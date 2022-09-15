@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+
+    <!-- Libraries Style -->
+    <link
+      rel="stylesheet"
+      href="./assets/libraries/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/libraries/leaflet/leaflet.css" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>World Weather App</title>
+  </head>
+  <body class="bg-primary">
+    <!-- Loader -->
+    <div class="loader">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <aside class="col-12 col-md-5 min-vh-100 p-4">
+          <div class="d-flex justify-content-center mb-4">
+            <img src="./assets/images/logo.png" class="logo" alt="logo" />
+          </div>
+
+          <form class="position-relative">
+            <input
+              type="search"
+              placeholder="Search country, state, city..."
+              class="form-control form-control-lg"
+            />
+            <button type="submit"></button>
+          </form>
+          <div id="weather" class="weather-card">
+            <div>
+              <h3 class="mb-0">Jakarta, IDN</h3>
+              <p class="opacity-75 mb-0">Saturday, Dec 2022</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <h1 class="mb-0">
+                <span id="temperature">18</span>
+                <span class="units">
+                  <span class="weather-unit active">°C</span> |
+                  <span class="weather-unit">°F</span>
+                </span>
+              </h1>
+              <div class="text-end">
+                <img
+                  src="./assets/images/weather-icons/rain-and-sleet-mix.svg"
+                  alt="rain"
+                />
+                <h6 class="mb-0">Mostly Raining</h6>
+              </div>
+            </div>
+          </div>
+          <div id="weather-detail" class="weather-card">
+            <div class="row justify-content-between">
+              <div class="col-auto text-center humidity">
+                <h4 class="mb-0">30</h4>
+                Humidity
+              </div>
+              <div class="col-auto text-center feels-like">
+                <h4 class="mb-0">30</h4>
+                Feels Like
+              </div>
+              <div class="col-auto text-center pressure">
+                <h4 class="mb-0">30</h4>
+                Pressure
+              </div>
+            </div>
+          </div>
+        </aside>
+        <main class="col-12 col-md-7 px-0">
+          <div id="map"></div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Libraries JS -->
+    <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libraries/leaflet/leaflet.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/functions.js"></script>
+    <script src="./assets/js/Toast.js"></script>
+    <script src="./assets/js/Leafet.js"></script>
+    <script src="./assets/js/OpenWeather.js"></script>
+    <script src="./assets/js/Main.js"></script>
+    <script src="./assets/js/Script.js"></script>
+  </body>
+</html>
