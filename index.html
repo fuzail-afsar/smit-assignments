@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
+
+    <!-- Libraries Style -->
+    <link
+      rel="stylesheet"
+      href="./assets/libraries/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>News App</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky-top shadow-sm bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="./index.html"
+                ><img src="./assets/images/logo.png" alt="logo" class="logo"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas-header"
+                aria-controls="offcanvas-header"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvas-header"
+                aria-labelledby="offcanvas-header-label"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvas-header-label">
+                    Menu
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./news.html?category=general"
+                        >General</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./news.html?category=sports"
+                        >Sports</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./news.html?category=business"
+                        >Business</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./news.html?category=health"
+                        >Health</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="./news.html?category=entertainment"
+                        >Entertainment</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./news.html?category=science"
+                        >Science</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./news.html?category=technology"
+                        >Technology</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="pt-3">
+      <!-- General News -->
+      <section id="general-news">
+        <div class="container">
+          <div class="row g-2 general-news-row"></div>
+        </div>
+      </section>
+
+      <!-- Sports Headlines -->
+      <section class="py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <h2 class="border-start border-4 border-secondary ps-2 mb-3">
+                Sports
+              </h2>
+            </div>
+            <div class="col-12">
+              <div class="row g-4 sports-headlines-row headlines"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Business Headlines -->
+      <section class="py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <h2 class="border-start border-4 border-secondary ps-2 mb-3">
+                Business
+              </h2>
+            </div>
+            <div class="col-12">
+              <div class="row g-4 business-headlines-row headlines"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Health Headlines -->
+      <section class="py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mb-2">
+              <h2 class="border-start border-4 border-secondary ps-2 mb-3">
+                Health
+              </h2>
+            </div>
+            <div class="col-12">
+              <div class="row g-4 health-headlines-row headlines"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-center py-3 mt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="mb-0 text-white">
+              © <span id="year">2022</span>, developed by
+              <a
+                class="text-secondary fw-semibold text-decoration-none"
+                target="_blank"
+                href="https://fuzailahmed.000webhostapp.com/"
+                >Fuzail</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Libraries JS -->
+    <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/Helper.js"></script>
+    <script src="./assets/js/Main.js"></script>
+    <script src="./assets/js/NewsApi.js"></script>
+    <script src="./assets/js/Index.js"></script>
+  </body>
+</html>
