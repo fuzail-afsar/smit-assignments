@@ -16,7 +16,7 @@ HTML Projects
 6.  **Periodic Table:** [GitHub URL](https://github.com/fuzail-afsar/SMIT-Assignments/tree/html-periodic-table) | [Demo URL](https://periodic-table-fuzail.netlify.app/)
 7.  **Form:** [GitHub URL](https://github.com/fuzail-afsar/SMIT-Assignments/tree/html-user-info-form) | [Demo URL](https://info-form.netlify.app/)
 8.  **Multipage Form:** [GitHub URL](https://github.com/fuzail-afsar/SMIT-Assignments/tree/html-multipage-review-form) | [Demo URL](https://review-steps-form.netlify.app/)
-9.  **Website (using html tables: )** [GitHub URL](https://github.com/fuzail-afsar/SMIT-Assignments/tree/html-table-website) | [Demo URL](https://fashion-fuzail.netlify.app/)
+9.  **Website (using html tables):** [GitHub URL](https://github.com/fuzail-afsar/SMIT-Assignments/tree/html-table-website) | [Demo URL](https://fashion-fuzail.netlify.app/)
 
 CSS Projects
 ------------
