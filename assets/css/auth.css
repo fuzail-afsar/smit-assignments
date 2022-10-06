@@ -1,0 +1,10 @@
+/* Header */
+header {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+header img {
+    max-width: 9rem;
+    width: 100%;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-alternate.png"
+    />
+
+    <!-- Libraries Style -->
+    <link
+      rel="stylesheet"
+      href="./assets/libraries/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/auth.css" />
+
+    <title>Chat</title>
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-7 col-md-5 col-lg-4 text-center">
+            <a class="navbar-brand" href="./index.html"
+              ><img src="./assets/images/logo.svg" alt="logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="pt-3">
+      <!-- Sign Up -->
+      <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-7 col-md-5 col-lg-4 text-center">
+              <h1 class="fw-bold">Sign Up</h1>
+              <p>Join Chat Now</p>
+              <form class="mb-2">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input type="tel" class="form-control" placeholder="Phone" />
+                </div>
+                <!-- <div class="mb-3">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="Date of birth"
+                  />
+                </div> -->
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <button
+                    type="submit"
+                    class="btn btn-primary w-100 fw-semibold"
+                  >
+                    Sign Up
+                  </button>
+                </div>
+              </form>
+              <span
+                >Already have an account
+                <a href="./signin.html">Sign in</a></span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Libraries JS -->
+    <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <!-- <script src="./assets/js/Helper.js"></script> -->
+    <script src="./assets/js/Main.js"></script>
+    <!-- <script src="./assets/js/Index.js"></script> -->
+  </body>
+</html>

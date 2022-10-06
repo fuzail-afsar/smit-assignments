@@ -1,0 +1,56 @@
+.container-fluid main {
+    height: 100vh;
+}
+
+#contacts-sidebar {
+    flex: 0 0 17.8125rem;
+    background-color: #f6f8fb;
+}
+
+.contact-list {
+    list-style: none;
+    overflow-y: auto;
+    height: calc(100vh - 13rem);
+    margin-bottom: 0rem;
+}
+
+#chats {
+    height: calc(100vh - 9.3125rem);
+    overflow: auto;
+    /* .scroller { */
+    /* overflow-y: auto;
+    scrollbar-color: #47B4AC;
+    scrollbar-width: thin; */
+    /* } */
+}
+
+#send-message input {
+    background-color: #f6f8fb;
+}
+
+.avatar-chat {
+    flex-basis: 2.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.message {
+    margin-bottom: 1rem;
+    display: flex;
+}
+
+.message>div {
+    max-width: calc(100% - 5.6rem);
+}
+
+.message.contact-message img {
+    margin-right: 0.5rem;
+}
+
+.message.user-message {
+    flex-direction: row-reverse;
+}
+
+.message.user-message img {
+    margin-left: 0.5rem;
+}

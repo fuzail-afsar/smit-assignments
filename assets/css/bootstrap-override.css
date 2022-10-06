@@ -1,0 +1,202 @@
+body {
+    font-family: 'Poppins', sans-seri, system-ui, -apple-system, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a, a:hover {
+    color: #611f69;
+}
+
+/* Form Styles */
+/* .form-control {
+    border-color: #611f69;
+} */
+
+.form-control:focus {
+    border-color: #611f69;
+    box-shadow: 0 0 0 0.25rem rgb(97 31 105 / 25%);
+}
+
+/* .form-select {
+    border-color: #611f69;
+} */
+
+.form-select:focus {
+    border-color: #611f69;
+    box-shadow: 0 0 0 0.25rem rgb(97 31 105 / 25%);
+}
+
+.form-check-input:checked {
+    background-color: #611f69;
+    border-color: #611f69;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem rgb(97 31 105 / 25%);
+}
+
+.form-label {
+    margin-bottom: 0.2rem;
+}
+
+/* Button Styles */
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgb(97 31 105 / 25%);
+}
+
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    background-color: #611f69;
+    border-color: #611f69;
+}
+
+.btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active {
+    /* background-color: #611f69; */
+    background-color: inherit;
+    border-color: #611f69;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    box-shadow: 0 0 0 0.25rem rgb(97 31 105 / 25%);
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    background-color: #611f69;
+    border-color: #611f69;
+    box-shadow: 0 0 0 0.25rem rgb(97 31 105 / 25%);
+}
+
+.btn-check:active+.btn:focus, .btn-check:checked+.btn:focus, .btn.active:focus, .btn.show:focus, .btn:active:focus {
+    box-shadow: 0 0 0 0.25rem rgb(97 31 105 / 25%);
+}
+
+.btn-primary, .btn-primary:hover {
+    background-color: #611f69;
+    border-color: #611f69;
+}
+
+.btn-outline-primary {
+    color: #611f69;
+    border-color: #611f69;
+}
+
+.btn-outline-primary:hover {
+    background-color: #611f69;
+    border-color: #611f69;
+}
+
+.btn-secondary, .btn-secondary:hover {
+    background-color: #f6f8fb;
+    border-color: #f6f8fb;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f6f8fb;
+    border-color: #f6f8fb;
+}
+
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    background-color: #611f69;
+    border-color: #611f69;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    background-color: #611f69;
+    border-color: #611f69;
+}
+
+/* Button Close */
+.btn-close:focus {
+    box-shadow: none;
+}
+
+/* Background Styles */
+.bg-primary {
+    background-color: #611f69 !important;
+}
+
+.bg-secondary {
+    background-color: #f6f8fb !important;
+}
+
+/* Text Styles */
+.text-primary {
+    color: #611f69 !important;
+}
+
+.text-secondary {
+    color: #f6f8fb !important;
+}
+
+/* Border Styles */
+.border-primary {
+    border-color: #611f69 !important;
+}
+
+.border-secondary {
+    border-color: #f6f8fb !important;
+}
+
+/* List Group */
+.list-group-item-action:focus, .list-group-item-action:hover {
+    background-color: #611f69;
+    color: #ffffff;
+}
+
+.list-group-item.active {
+    background-color: #611f69;
+    border-color: #611f69;
+}
+
+/* Drop Down */
+.dropdown-item.active, .dropdown-item:active {
+    background-color: #611f69;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #611f69;
+    color: #ffffff;
+}
+
+/* Link */
+.nav-link {
+    color: #611f69;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #f6f8fb;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #f6f8fb;
+    border-color: #f0f0f0;
+    border-bottom-color: #ffffff;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: #f0f0f0;
+    border-bottom-color: #ffffff;
+}
+
+.nav-tabs {
+    border-bottom-color: #f0f0f0;
+}
+
+/* Nav bar */
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #f6f8fb;
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    border: 0px;
+    padding: 0px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler:focus-visible {
+    outline: none;
+}

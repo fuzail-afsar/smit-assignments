@@ -1,0 +1,10 @@
+#user-profile strong {
+    display: block;
+}
+
+@media (min-width: 576px) {
+    #user-profile strong {
+        width: 15rem;
+        display: inline-block;
+    }
+}
