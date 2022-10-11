@@ -44,7 +44,7 @@
     </header>
 
     <!-- Main -->
-    <main class="pt-3">
+    <main class="py-3">
       <!-- Sign Up -->
       <section>
         <div class="container">
@@ -56,39 +56,41 @@
                 <div class="mb-3">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control required nospace"
                     placeholder="First Name"
+                    name="firstName"
                   />
                 </div>
                 <div class="mb-3">
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control required nospace"
                     placeholder="Last Name"
+                    name="lastName"
                   />
                 </div>
                 <div class="mb-3">
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control required email"
                     placeholder="Email"
+                    name="email"
                   />
                 </div>
                 <div class="mb-3">
-                  <input type="tel" class="form-control" placeholder="Phone" />
-                </div>
-                <!-- <div class="mb-3">
                   <input
-                    type="date"
-                    class="form-control"
-                    placeholder="Date of birth"
+                    type="tel"
+                    class="form-control required phone"
+                    placeholder="Phone"
+                    name="phone"
                   />
-                </div> -->
+                </div>
                 <div class="mb-3">
                   <input
                     type="password"
-                    class="form-control"
+                    class="form-control required password"
                     placeholder="Password"
+                    name="password"
                   />
                 </div>
                 <div class="mb-3">
@@ -114,8 +116,9 @@
     <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <!-- <script src="./assets/js/Helper.js"></script> -->
+    <script src="./assets/js/FormValidation.js"></script>
+    <script src="./assets/js/FireBase.js" type="module"></script>
     <script src="./assets/js/Main.js"></script>
-    <!-- <script src="./assets/js/Index.js"></script> -->
+    <script src="./assets/js/Signup.js" type="module"></script>
   </body>
 </html>

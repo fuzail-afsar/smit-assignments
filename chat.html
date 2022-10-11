@@ -115,7 +115,7 @@
                     </button>
                     <ul class="dropdown-menu border-0 shadow-sm">
                       <li>
-                        <button class="dropdown-item logout-user">
+                        <button class="dropdown-item signout-user">
                           Logout
                         </button>
                       </li>
@@ -134,17 +134,15 @@
                   id="contacts-sidebar"
                   class="px-0 pt-3 h-inherit bg-secondary"
                 >
-                  <div class="d-flex flex-wrap align-items-center px-3 mb-4">
+                  <div class="d-flex flex-wrap align-items-center px-3 py-2">
                     <img
                       src="./assets/images/placeholder.jpg"
                       alt=""
                       class="avatar me-3"
                     />
                     <div>
-                      <h4 class="user-full-name mb-0">Fuzail Ahmed</h4>
-                      <small class="user-email text-muted"
-                        >fuzailafsar92@gmail.com</small
-                      >
+                      <h4 class="user-fullname mb-0"></h4>
+                      <small class="user-email text-muted"></small>
                     </div>
                   </div>
                   <form class="d-flex flex-wrap mb-4 px-3">
@@ -158,57 +156,16 @@
                     </button>
                   </form>
                   <h4 class="px-3 mb-3">Contacts</h4>
-                  <ul class="px-0 contact-list">
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                    <li class="px-3 mb-4 pointer">
-                      <span class="avatar me-2">F</span>
-                      <span class="name fw-semibold">Fuzail Ahmed</span>
-                    </li>
-                  </ul>
+                  <ul class="px-0 contact-list"></ul>
                 </aside>
-                <div class="col text-center">
+                <div id="start-chat-panel" class="col text-center">
                   <img
                     src="./assets/images/home-chat.png"
                     alt="Start your chat"
                   />
                   <h1 class="fw-bold">Start Your Conversation Now</h1>
                 </div>
-                <div class="col px-0 d-none">
+                <div id="user-chat-panel" class="col px-0 d-none">
                   <header class="d-flex align-items-center box-shadow px-4">
                     <img
                       src="./assets/images/placeholder.jpg"
@@ -219,198 +176,7 @@
                       <span class="chating-user fw-semibold">Contact User</span>
                     </div>
                   </header>
-                  <ul id="chats" class="px-4 mb-0 pt-4 scroller">
-                    <li class="message contact-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                    <li class="message contact-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                    <li class="message contact-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                    <li class="message contact-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                    <li class="message contact-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                    <li class="message contact-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                    <li class="message contact-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                    <li class="message contact-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                    <li class="message contact-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                    <li class="message user-message">
-                      <img
-                        src="./assets/images/placeholder.jpg"
-                        alt=""
-                        class="avatar avatar-chat"
-                      />
-                      <div class="bg-secondary rounded p-2">
-                        <p class="mb-0">
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                          Contact User Contact User Contact User Contact User
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
+                  <ul id="chats" class="px-4 mb-0 pt-4 scroller"></ul>
                   <div class="px-4">
                     <form
                       id="send-message"
@@ -438,8 +204,8 @@
     <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <!-- <script src="./assets/js/Helper.js"></script> -->
+    <script src="./assets/js/FireBase.js" type="module"></script>
     <script src="./assets/js/Main.js"></script>
-    <!-- <script src="./assets/js/Index.js"></script> -->
+    <script src="./assets/js/Chat.js" type="module"></script>
   </body>
 </html>
