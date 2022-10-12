@@ -37,7 +37,7 @@ class Chat extends Main {
 
   #renderUserInfoInDom() {
     const { email, displayName } = this._fireBase.getUserProfile();
-    userFullnameElem.innerHTML = displayName;
+    userFullnameElem.innerHTML = Helper.controlTextLength(displayName, 12);
     userEmailElem.innerHTML = email;
   }
 
