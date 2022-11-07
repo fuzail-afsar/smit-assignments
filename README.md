@@ -8,7 +8,7 @@ All assignments of SMIT Batch 08
 HTML Projects
 -------------
 
-1.  **Resume:** [GitHub URL](https://github.com/fuzail-afsar/SMIT-Assignments/tree/html-cv) | [Demo URL](https://fuzail-resume.netlify.app)
+1.  **Resume:** [GitHub URL](/tree/html-cv) | [Demo URL](https://fuzail-resume.netlify.app)
 2.  **Restaurant Menu:** [GitHub URL](https://github.com/fuzail-afsar/SMIT-Assignments/tree/html-menu-listing) | [Demo URL](https://restaurant-menu-fuzail.netlify.app)
 3.  **News:** [GitHub URL](https://github.com/fuzail-afsar/SMIT-Assignments/tree/html-directory-structure) | [Demo URL](https://news-fuzail.netlify.app/)
 4.  **Gallery:** [GitHub URL](https://github.com/fuzail-afsar/SMIT-Assignments/tree/html-gallery) | [Demo URL](https://gallery-fuzail.netlify.app/)
