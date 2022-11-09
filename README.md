@@ -3,7 +3,7 @@
 All assignments of SMIT Batch 08
 
 
-[**HTML**](#html-projects) | [**CSS**](#css-projects) | [**JavaScript**](#javascript-projects)
+[**HTML**](#html-projects) | [**CSS**](#css-projects) | [**JavaScript**](#javascript-projects) | [**React**](#react-projects)
 
 HTML Projects
 -------------
@@ -50,3 +50,8 @@ JavaScript Projects
 15.  **Weather App:** [GitHub URL](https://github.com/fuzail-afsar/smit-assignments/tree/javascript-weather-app) | [Demo URL](https://world-weather-app-fuzail.netlify.app/)
 16.  **News App:** [GitHub URL](https://github.com/fuzail-afsar/smit-assignments/tree/javascript-news-app) | [Demo URL](https://news-app-fuzail.netlify.app/)
 17.  **Chat App:** [GitHub URL](https://github.com/fuzail-afsar/smit-assignments/tree/javascript-chat-app) | [Demo URL](https://chat-app-fuzail.netlify.app/)
+
+React Projects
+-------------------
+
+2.  **Assignment 2:** [GitHub URL](https://github.com/fuzail-afsar/smit-assignments/tree/react-assignment-2)
